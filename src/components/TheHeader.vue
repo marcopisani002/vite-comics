@@ -40,7 +40,6 @@ export default {
 
 header {
     background-color: $color-primary;
-    border-bottom: 4px solid grey;
     
     
 }
@@ -70,7 +69,7 @@ header {
 
         &:hover {
            border-bottom: 3px solid $color-secondary;
-            background-color: #cccccc;
+           padding-top: 2rem;
         }
     }
 }
