@@ -1,0 +1,17 @@
+@use "./partials/utilities" as *;
+@use "./partials/variables" as *;
+
+
+// Importiamo così le variaibili solo per poter sovrascrivere 
+// quelle di BS
+// @import "./partials/variables";
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  // Se servono, posso scrivere anche le variabili css classiche
+}
+
+.my-text-primary {
+  color: $color-primary;
+  font-size: 2rem;
+}
