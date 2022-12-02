@@ -2,29 +2,36 @@
   <TheHeader></TheHeader>
 
   <main>
-    <div class="container">
-      <h1 class="bg-primary">La Molisana</h1>
+    <div class="bg-dark my-second-header">
+      <div class="container bg-dark">
 
-      <button class="btn btn-primary">Testo di prova</button>
+        <h2 class="text-white  text-center pt-5">--| Content goes Here |-- </h2>
+
+
+      </div>
     </div>
   </main>
 
+  <CommercialSection></CommercialSection>
+  <BackgroundListSection> </BackgroundListSection>
   <TheFooter></TheFooter>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue';
 import TheFooter from "./components/TheFooter.vue";
+import CommercialSection from "./components/CommercialSection.vue";
+import BackgroundListSection from "./components/BackgroundListSection.vue";
 
 export default {
-  components: { TheHeader, TheFooter }
+  components: { TheHeader, TheFooter, CommercialSection, BackgroundListSection }
 };
 </script>
 
 <style lang="scss">
 @use "./styles/general.scss";
 
-.text-pippo {
-  color: blue;
+.my-second-header {
+  height: 20vh;
 }
 </style>

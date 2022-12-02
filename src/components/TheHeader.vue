@@ -1,75 +1,75 @@
 <template>
-    <header class="text-center">
-      <img src="/la-molisana-logo.png" alt="">
-      <!-- 
-        <img src="../assets/vue.svg" alt="">
-        <img src="../assets/download.png" alt="">
-  
-        <img :src="getImgUrl()" alt=""> 
-      -->
-      <div class="text-pippo">
-        <p>asdasdasd</p>
-      </div>
-  
-      <nav class="my-navbar">
-        <ul>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-      </nav>
+    <header>
+        
+        <div class="container">
+            <nav class="my-navbar">
+                
+            <img src="/dc-logo.png" class="mt-3 mb-2" alt="">
+                <ul>
+                    <li><a href="#">CHARACTERS</a></li>
+                    <li><a href="#">COMICS</a></li>
+                    <li><a href="#">MOVIES</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">GAMES</a></li>
+                    <li><a href="#">COLLECTIBLES</a></li>
+                    <li><a href="#">VIDEOS</a></li>
+                    <li><a href="#">FANS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-  </template>
+</template>
   
-  <script>
-  export default {
-    data () {
-      return {
-        nomeImg: "vue.svg"
-      };
+<script>
+export default {
+    data() {
+        return {
+           
+        };
     },
     methods: {
-      /* getImgUrl() {
-        return new URL(`../assets/${this.nomeImg}`, import.meta.url)
-      } */
+      
     }
-  };
-  </script>
+};
+</script>
   
-  <style scoped lang="scss">
-  @use "../styles/partials/variables" as *;
-  
-  header {
-    background-color: $color-secondary;
-  }
-  
-  .text-pippo {
-    color: pink;
-    font-weight: bold;
-  }
-  
-  .my-navbar {
+<style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
+header {
+    background-color: $color-primary;
+    border-bottom: 4px solid grey;
+}
+
+
+
+.my-navbar {
     display: flex;
-    justify-content: center;
-  
+    justify-content: space-between;
+    
+
     ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
-      a {
-        padding: $basic-space ($basic-space * 2);
+        font-size: 12px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            padding: $basic-space (
+                $basic-space * 2
+            );
         display: inline-block;
         text-decoration: none;
         color: $color-text;
-  
+
         &:hover {
-          color: $color-primary;
-          background-color: #cccccc;
+           border-bottom: 3px solid $color-secondary;
+            background-color: #cccccc;
         }
-      }
     }
-  }
-  </style>
+}
+}
+</style>
