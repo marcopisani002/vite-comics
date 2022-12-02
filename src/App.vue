@@ -13,7 +13,7 @@
   </main>
 
   <CommercialSection></CommercialSection>
-  <BackgroundListSection> </BackgroundListSection>
+  <BackgroundListSection></BackgroundListSection>
   <TheFooter></TheFooter>
 </template>
 
