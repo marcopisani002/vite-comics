@@ -1,20 +1,35 @@
 <template>
-    <footer class="text-pippo">
+  <footer>
+    <div class="container">
+      <button class=" btn my-btn fw-bold text-white">
+        SIGN UP NOW!
+
+      </button>
+
+
+
+
+    </div>
+
+  </footer>
+</template>
   
-      questo è il footer
-    </footer>
-  </template>
+<script>
+export default {
+
+};
+</script>
   
-  <script>
-  export default {
-  
-  };
-  </script>
-  
-  <style scoped lang="scss">
-  @use "../styles/partials/variables" as *;
-  
-  footer {
-    border-top: 1px solid $border-color;
+<style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
+footer {
+  background-color: rgb(37, 37, 37);
+  color: $color-primary;
+
+  .my-btn {
+    border: 1px solid $color-secondary;
+    border-radius: 0;
   }
-  </style>
+}
+</style>

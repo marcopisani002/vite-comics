@@ -41,11 +41,14 @@ export default {
 header {
     background-color: $color-primary;
     border-bottom: 4px solid grey;
+    
+    
 }
 
 
 
 .my-navbar {
+    
     display: flex;
     justify-content: space-between;
     
