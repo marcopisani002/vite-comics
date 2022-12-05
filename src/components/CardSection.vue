@@ -9,6 +9,11 @@
         <!-- SEZIONE CARD -->
         <div class="bg-dark my-second-header">
             <div class="container bg-dark my-padd">
+                <div class="  pb-4">
+
+                    <button class="my-btn2 fw-bold text-white ">CURRENT SERIES</button>
+
+                </div>
 
                 <div class=" row row-cols-1  row-cols-md-3 g-4 ">
                     <div class="col-md-2 " v-for="(Contents, i) in cardItems " :key="('contents n°' + i)">
@@ -25,7 +30,7 @@
                 </div>
                 <div class="text-center pb-4">
 
-                    <button class="  my-btn fw-bold text-white ">SIGN UP NOW!</button>
+                    <button class="  my-btn fw-bold text-white ">LOAD MORE</button>
 
                 </div>
 
@@ -46,6 +51,7 @@ export default {
 </script>
 <style lang="scss">
 @use "../styles/partials/variables" as *;
+
 .m-neg {
     margin-top: -.5rem;
     margin-bottom: -.1rem;
@@ -56,20 +62,27 @@ img {
 
 }
 
-  button:hover {
+button:hover {
     background-color: $color-secondary;
     border: 4px solid rgb(37, 37, 37);
     transform: scale(1.3);
-  }
+}
 
-  button:active {
+button:active {
     transform: scale(.5);
-  }
+}
 
-  .my-btn {
+.my-btn {
     background-color: rgb(37, 37, 37);
-    color: $color-primary;    
+    color: $color-primary;
     border: 1px solid $color-secondary;
     border-radius: 0;
-  }
+}
+.my-btn2 {
+    background-color: $color-secondary;
+    color: $color-primary;
+    border: 1px solid $color-secondary;
+    border-radius: 0;
+    
+}
 </style>
