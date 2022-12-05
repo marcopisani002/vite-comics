@@ -3,7 +3,7 @@
 
   <main>
     <div class="bg-dark my-second-header">
-      <div class="container bg-dark">
+      <div class="container bg-dark my-padd">
 
         <h2 class="text-white  text-center pt-5">--| Content goes Here |-- </h2>
 
