@@ -1,20 +1,15 @@
 <template>
-  <TheHeader></TheHeader>
-
-  <main>
-    <div class="bg-dark my-second-header">
-      <div class="container bg-dark my-padd">
-
-        <h2 class="text-white  text-center pt-5">--| Content goes Here |-- </h2>
-
-
-      </div>
-    </div>
-  </main>
+  <TheHeader > </TheHeader>
+ 
+  <CardSection > </CardSection>
 
   <CommercialSection></CommercialSection>
+ 
   <BackgroundListSection></BackgroundListSection>
+  
+  <!-- <TheFooter :page-links="navLinks"></TheFooter> -->
   <TheFooter></TheFooter>
+
 </template>
 
 <script>
@@ -22,16 +17,21 @@ import TheHeader from './components/TheHeader.vue';
 import TheFooter from "./components/TheFooter.vue";
 import CommercialSection from "./components/CommercialSection.vue";
 import BackgroundListSection from "./components/BackgroundListSection.vue";
+import CardSection from "./components/CardSection.vue";
 
 export default {
-  components: { TheHeader, TheFooter, CommercialSection, BackgroundListSection }
+  components: { TheHeader, TheFooter, CommercialSection, BackgroundListSection,CardSection },
+  data() {
+    return {
+     
+    };
+  },
+
+
 };
 </script>
 
 <style lang="scss">
 @use "./styles/general.scss";
 
-.my-second-header {
-  height: 20vh;
-}
 </style>
