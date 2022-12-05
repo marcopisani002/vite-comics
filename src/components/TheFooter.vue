@@ -2,11 +2,7 @@
   <footer>
     <div class="container ">
       <div class="d-flex justify-content-between pt-4 pb-4">
-        <button class=" btn my-btn fw-bold text-white ">
-          <a href="">SIGN UP NOW!</a>
-
-
-        </button>
+        <button class="  my-btn fw-bold text-white ">SIGN UP NOW!</button>
 
         <ul class="d-flex gap-3">
 
@@ -47,11 +43,6 @@ footer {
   background-color: rgb(37, 37, 37);
   color: $color-primary;
 
-  a {
-    text-decoration: none;
-    color:$color-primary;
-  }
-
   button:hover {
     background-color: $color-secondary;
     border: 4px solid rgb(37, 37, 37);
@@ -62,11 +53,6 @@ footer {
     transform: scale(.5);
   }
 
-  .my-btn {
-    border: 1px solid $color-secondary;
-    border-radius: 0;
-  }
-
   ul {
     color: $color-secondary;
     list-style: none;
@@ -74,4 +60,10 @@ footer {
 
   }
 }
+
+.my-btn {
+    border: 1px solid $color-secondary;
+    border-radius: 0;
+  }
+
 </style>

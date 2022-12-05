@@ -25,11 +25,8 @@
                 </div>
                 <div class="text-center pb-4">
 
-                    <button class=" btn my-batn fw-bold text-white  ">
-                        <a class="a-btn">SIGN UP NOW!</a>
+                    <button class="  my-btn fw-bold text-white ">SIGN UP NOW!</button>
 
-
-                    </button>
                 </div>
 
             </div>
@@ -48,7 +45,7 @@ export default {
 }
 </script>
 <style lang="scss">
-/*@use "../styles/partials/variables" as *;*/
+@use "../styles/partials/variables" as *;
 .m-neg {
     margin-top: -.5rem;
     margin-bottom: -.1rem;
@@ -59,26 +56,20 @@ img {
 
 }
 
-.a-btn {
-    text-decoration: none;
-    /* color:$color-primary;*/
-    color: white;
-}
-
-button:hover {
-    /*background-color: $color-secondary;*/
-    background-color: #0074E8;
+  button:hover {
+    background-color: $color-secondary;
     border: 4px solid rgb(37, 37, 37);
     transform: scale(1.3);
-}
+  }
 
-button:active {
+  button:active {
     transform: scale(.5);
-}
+  }
 
-.my-batn {
-    background-color: #0074E8;
-    /*border: 1px solid $color-secondary;*/
+  .my-btn {
+    background-color: rgb(37, 37, 37);
+    color: $color-primary;    
+    border: 1px solid $color-secondary;
     border-radius: 0;
-}
+  }
 </style>
